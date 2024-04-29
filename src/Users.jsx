@@ -21,7 +21,7 @@ function Users() {
   
     if (loading) return <div>로딩중..</div>;
     if (error) return <div>에러가 발생했습니다</div>;
-    if (!users) return <button onClick={refetch}>불러오기</button>;
+    if (!users) return <button onClick={refetch}>서버로부터 데이터 가져오기</button>;
     return (
         <>
           <ul>
